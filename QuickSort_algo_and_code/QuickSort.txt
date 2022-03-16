@@ -1,0 +1,21 @@
+......: Quick Sort Algorithm :......
+
+quickSort (A,P,r)
+    if p<r then 
+        q = partition(A,P,r)
+        quicksort(A,P,r)
+        quicksort(A,P+r,r)
+
+
+Function: Partition(A,P,r)
+            x <-- A[P]
+            i <-- p-1
+            j <-- r+1
+            while True do
+                repeat j <-- j-1
+                until A[j] <= x
+                repeat i <-- i+1
+                until A[i] >= x
+                if i <j then 
+                    exchange A[i] <--> A[j]
+                else return j
