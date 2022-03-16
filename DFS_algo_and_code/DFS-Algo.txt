@@ -1,0 +1,13 @@
+-----: Algorithm for DFS :----
+
+DFS(G,U)
+    u.visited =True
+    for each v belong to G.Adj[U]
+        if v.visited==True
+            DFS(G,U)
+init (){
+    for each U belong to G
+        u.visited =False
+    for each U belong to G
+        DFS(G,U)
+}
