@@ -1,0 +1,12 @@
+-----: Algorithm for Max-Min :---- 
+
+
+Algorithm: Max-Min-Element (numbers[])
+            max := numbers[1]
+            min := numbers[1]
+            for i = 2 to n do
+                if numbers[i] > max then
+                    max := numbers[i]
+                if numbers[i] < min then
+                    min := numbers[i]
+            return (max, min) 
