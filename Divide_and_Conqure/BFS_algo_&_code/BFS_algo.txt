@@ -1,6 +1,0 @@
--:Algorithm for Bfs:-
-Create a queue Q.
-mark V as visited and put V into Q
-while Q is non-empty
-    remove the head U of Q
-    mark and enqueue all neighbour
