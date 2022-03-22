@@ -1,0 +1,19 @@
+-----: Algorithm for Minimum Cost Spanning Tree by Kruskal Algorithm:-----
+
+•Step1: So, first take (h, g) edge
+
+•Step 2: then (g, f) edge.
+
+•Step 3: then (a, b) and ( i , g) edges are
+
+•Step 4: Now, edge (h, i ). Both h and i vertices are in the same set. Thus
+it creates a cycle. So this edge is discarded.
+
+•Step 5: In (e, f) edge both endpoints e and f exist in the same tree so
+discarded this edge. Then (b, h) edge, it also creates a cycle.
+
+•Step 6: After that edge (d, f) and the final spanning tree is shown as in
+dark lines.
+
+•Step 7: This step will be required Minimum Spanning Tree because it
+contains all the 9 vertices and (9 1) = 8 edges
