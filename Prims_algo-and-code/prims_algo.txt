@@ -1,0 +1,15 @@
+-----: Algorithm for Minimum Cost Spanning Tree by Prim's Algorithm :-----
+
+• Algorithm:
+MST-PRIM (G, w, r)
+1.for each u V [G]
+2.do key [u] ← ∞
+3.π [u] ← NIL
+4.key [r] ← 0
+5.Q ← V [G]
+6.While Q ?
+7.do u ← EXTRACT MIN (Q)
+8.for each v Adj [u]
+9.do if v Q and w (u, v) < key [v]
+10.then π [v] ← u
+11.key [v] ← w (u, v)
