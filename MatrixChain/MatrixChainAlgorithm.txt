@@ -1,0 +1,25 @@
+-----: Algorithm for Matrix multiplication :----
+
+ Matrix-Chain-Order(p)
+    n <--- length[p]-1
+    for i <-- 1 to n
+        do m[i,j] <-- 0
+    for 1 <-- 2 to n
+        do for i <-- 1 to n-l-1
+            do j <-- i+l-1 
+            m[i,j] <-- infinite
+            for k <-- i to j-1
+                do q <-- m[i,k]+ m[k+1,j]+pipkpj
+                    if q < m[i,j]
+                        then m[i,j] <-- q
+                            s[i,j] <-- k
+    return m and s
+
+Print Optimal Parens(s,i,j)
+    if i=j
+        then print "A"
+    else
+        print "C"
+        print-Optimal-parens(s,i,s[i,j])
+        print-Optimal-Parens(s,s[i,j]+1,j)
+        print ")"
