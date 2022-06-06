@@ -7,6 +7,6 @@ int main(){
     scanf("%f",&rate);
     printf("Enter the time: ");
     scanf("%f",&time);
-    printf("Interest = %.2f",(principal*rate*time)/100);
+    printf("Interest = %.2f Rs",(principal*rate*time)/100);
     return 0;
 }
