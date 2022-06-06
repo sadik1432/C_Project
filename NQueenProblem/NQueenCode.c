@@ -45,4 +45,6 @@ void display(int*x,int n)
 	int i;
 	for(i=0;i<n;i++)
 		printf("%d\t",*(x+i));
+
+	
 }
