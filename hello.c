@@ -1,15 +1,17 @@
-#include <stdio.h>
-float c2f(float celcius){
-    float fahrenheit = (celcius*(9.0/5.0))+32;
-    return fahrenheit;
-
-}
-    
-
-int main(){
-   float n;
-   printf("Enter temperature in celcius: ");
-   scanf("%f", &n);
-   printf("%.2f celcius = %.2f fahreheit",n,c2f(n));
-  return 0;
+#include<stdio.h>
+int main()
+{
+    int x;
+    float y;
+    scanf("%d %f",&x,&y);
+    if(x>y){ //check for insufficient Funds
+        printf("%.2f",y);
+    }
+    else if(x%5==0 && (x+0.5)<=y){ //successful transaction
+        printf("%.2f",(y-(0.50)-x));
+    }
+    else{ //otherwise print balance
+        printf("%.2f",y);
+    }
+    return 0;
 }
