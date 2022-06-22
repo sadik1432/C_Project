@@ -45,10 +45,11 @@ int main()
 
     printf("\nenter the element you want to search: ");
     scanf("%d", &k);
-    if ((z = bsearch(0, n - 1, k, a)) == -1)
+    z = bsearch(0, n - 1, k, a);
+    if (z == -1)
         printf("item not found");
     else
-        printf("item present at position: %d", z);
+        printf("item present at position: %d", z+1);
     return 0;
     getch();
 }
